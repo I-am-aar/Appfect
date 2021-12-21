@@ -1,0 +1,31 @@
+@mixin pedal($color) {
+  width: 200px;
+  min-height: 280px;
+  background: $color;
+  position: relative;
+  margin: 10px 10px;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 140px;
+  -webkit-app-region: no-drag;
+  box-shadow: -15px 20px 10px rgba(0,0,0,.6);
+}
+
+@mixin pedalBtn() {
+  width: 180px;
+  height: 120px;
+  color: #222;
+  text-shadow: 0px 1px 0px rgba(255,255,255,.5);
+  font-size: 80px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  border-radius: 10px;
+  background: #333;
+  border-left: 5px solid #222;
+  border-bottom: 5px solid #222;
+  border-right: 5px solid #444;
+  border-top: 5px solid #444;
+  outline: none;
+  cursor: pointer;
+}

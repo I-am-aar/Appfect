@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Appfect | Synth</title>
+    <link rel="stylesheet" href="../css/styles.css">
+  </head>
+  <body style="background: linear-gradient( 45deg, #333, #999 );">
+    <h1 class="padHeading">Drum Pad</h1>
+    <p class="dropdown">
+        <label id="waveformLabel" for="soundType">waveform:&nbsp;&nbsp;</label></br>
+        <select name="soundType" id="soundType">
+            <option value="triangle" selected>Triangle</option>
+            <option value="sine">Sine</option>
+            <option value="square">Square</option>
+            <option value="sawtooth">Sawtooth</option>
+        </select>
+    </p>
+    <div id="keyboard">
+    </div>
+  </body>
+  <script>
+    // You can also require other files to run in this process
+    require('../js/pad.js')
+  </script>
+</html>

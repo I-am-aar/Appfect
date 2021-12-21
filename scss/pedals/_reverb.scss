@@ -1,0 +1,7 @@
+.reverbPedal {
+  @include pedal(linear-gradient(#d64759 10%, #da7352 90%));
+}
+
+#reverb {
+  @include pedalBtn();
+}

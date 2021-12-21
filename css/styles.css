@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron");
+@import url("https://fonts.googleapis.com/css?family=Lobster+Two");
+@import url("https://fonts.googleapis.com/css?family=Aldrich");
+@import url("https://fonts.googleapis.com/css?family=Allerta+Stencil");
+body {
+  background-size: cover;
+  min-height: 100vh;
+  -webkit-app-region: drag;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+label {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 12px;
+  padding-left: 10px;
+  margin: 0;
+}
+
+input[type=range] {
+  -webkit-app-region: no-drag;
+  -webkit-appearance: none;
+  margin-left: 9px;
+  width: 180px;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+  background: #111;
+  border-radius: 0px;
+  border: 0px solid #000000;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0 1px 1px #000000;
+  border-left: 3px solid #222;
+  border-bottom: 3px solid #222;
+  border-right: 3px solid #444;
+  border-top: 3px solid #444;
+  height: 15px;
+  width: 30px;
+  border-radius: 0px;
+  background: #333;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5px;
+}
+
+.synth {
+  width: 300px;
+  height: 200px;
+  background: blue;
+}
+
+.pedals, .otherBtns, .dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@-webkit-keyframes neon4 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #B6FF00, 0 0 70px #B6FF00, 0 0 80px #B6FF00, 0 0 100px #B6FF00, 0 0 150px #B6FF00;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #B6FF00, 0 0 35px #B6FF00, 0 0 40px #B6FF00, 0 0 50px #B6FF00, 0 0 75px #B6FF00;
+  }
+}
+
+.delayPedal {
+  width: 200px;
+  min-height: 280px;
+  background: -webkit-linear-gradient(left, #FD6F46 10%, #FB9832 90%);
+  background: linear-gradient(90deg, #FD6F46 10%, #FB9832 90%);
+  position: relative;
+  margin: 10px 10px;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 140px;
+  -webkit-app-region: no-drag;
+  box-shadow: -15px 20px 10px rgba(0, 0, 0, 0.6);
+}
+
+#delay {
+  width: 180px;
+  height: 120px;
+  color: #222;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+  font-size: 80px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  border-radius: 10px;
+  background: #333;
+  border-left: 5px solid #222;
+  border-bottom: 5px solid #222;
+  border-right: 5px solid #444;
+  border-top: 5px solid #444;
+  outline: none;
+  cursor: pointer;
+}
+
+.reverbPedal {
+  width: 200px;
+  min-height: 280px;
+  background: -webkit-linear-gradient(#d64759 10%, #da7352 90%);
+  background: linear-gradient(#d64759 10%, #da7352 90%);
+  position: relative;
+  margin: 10px 10px;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 140px;
+  -webkit-app-region: no-drag;
+  box-shadow: -15px 20px 10px rgba(0, 0, 0, 0.6);
+}
+
+#reverb {
+  width: 180px;
+  height: 120px;
+  color: #222;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+  font-size: 80px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  border-radius: 10px;
+  background: #333;
+  border-left: 5px solid #222;
+  border-bottom: 5px solid #222;
+  border-right: 5px solid #444;
+  border-top: 5px solid #444;
+  outline: none;
+  cursor: pointer;
+}
+
+.distortionPedal {
+  width: 200px;
+  min-height: 280px;
+  background: -webkit-linear-gradient(left, #00537E 10%, #3AA17E 90%);
+  background: linear-gradient(90deg, #00537E 10%, #3AA17E 90%);
+  position: relative;
+  margin: 10px 10px;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 140px;
+  -webkit-app-region: no-drag;
+  box-shadow: -15px 20px 10px rgba(0, 0, 0, 0.6);
+}
+
+#distortion {
+  width: 180px;
+  height: 120px;
+  color: #222;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+  font-size: 80px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  border-radius: 10px;
+  background: #333;
+  border-left: 5px solid #222;
+  border-bottom: 5px solid #222;
+  border-right: 5px solid #444;
+  border-top: 5px solid #444;
+  outline: none;
+  cursor: pointer;
+}
+
+#padBtn {
+  width: 300px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background: none;
+  color: #fff;
+  font-size: 24px;
+  font-family: 'Aldrich', sans-serif;
+  padding-top: 9px;
+  outline: none;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+  margin-top: 50px;
+}
+
+#padBtn:hover {
+  background: #FFF;
+  color: #333;
+}
+
+.padHeading {
+  margin-bottom: 0;
+  color: #FFF;
+}
+
+#waveformLabel {
+  font-size: 20px;
+  color: #FFF;
+}
+
+#keyboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.keyBtn {
+  float: left;
+  width: 200px;
+  height: 200px;
+  background: #ebebeb;
+  margin: 10px 10px;
+  border-top: 10px solid #FFF;
+  border-right: 10px solid #FFF;
+  border-bottom: 10px solid #d6d6d6;
+  border-left: 10px solid #d6d6d6;
+  outline: none;
+  font-size: 100px;
+}
+
+.keyBtn.keyPlaying {
+  color: #ff0009;
+  text-shadow: 0 0 10px rgba(255, 0, 9, 0.5);
+  border: none;
+}

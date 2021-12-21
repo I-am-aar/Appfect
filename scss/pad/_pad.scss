@@ -1,0 +1,55 @@
+#padBtn {
+  width: 300px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background: none;
+  color: #fff;
+  font-size: 24px;
+  font-family: 'Aldrich', sans-serif;
+  padding-top: 9px;
+  outline: none;
+  transition: 300ms ease-out;
+  margin-top: 50px;
+  &:hover {
+    background: #FFF;
+    color: #333;
+  }
+}
+
+.padHeading {
+  margin-bottom: 0;
+  color: #FFF;
+}
+
+#waveformLabel {
+  font-size: 20px;
+  color: #FFF;
+}
+
+#keyboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.keyBtn {
+  float: left;
+  width: 200px;
+  height: 200px;
+  background: #ebebeb;
+  margin: 10px 10px;
+  border-top: 10px solid #FFF;
+  border-right: 10px solid #FFF;
+  border-bottom: 10px solid #d6d6d6;
+  border-left: 10px solid #d6d6d6;
+  outline: none;
+  font-size: 100px;
+}
+
+.keyBtn.keyPlaying {
+  color: #ff0009;
+  text-shadow: 0 0 10px rgba(255, 0, 9, 0.5);
+  border: none;
+}

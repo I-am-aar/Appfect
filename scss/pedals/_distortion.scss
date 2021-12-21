@@ -1,0 +1,7 @@
+.distortionPedal {
+  @include pedal(linear-gradient(90deg,#00537E 10%,#3AA17E 90%));
+}
+
+#distortion {
+  @include pedalBtn();
+}

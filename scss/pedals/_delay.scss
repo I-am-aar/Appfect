@@ -1,0 +1,7 @@
+.delayPedal {
+  @include pedal(linear-gradient(90deg, #FD6F46 10%, #FB9832 90%));
+}
+
+#delay {
+  @include pedalBtn();
+}
